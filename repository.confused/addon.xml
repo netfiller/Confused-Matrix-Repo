@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<addon id="repository.confused" name="Confused Repo Matrix" version="1.0.2" provider-name="netfiller">
+	<requires>
+		<import addon="xbmc.addon" version="12.0.0"/>
+	</requires>
+	<extension point="xbmc.addon.repository" name="Confused Repo Matrix">
+		<dir minversion="18.9.9">
+			<info compressed="false">http://kodistream.tk/repo/addons.xml</info>
+			<checksum>http://kodistream.tk/repo/addons.xml.md5</checksum>
+			<datadir zip="true">http://kodistream.tk/repo/</datadir>
+			<hashes>false</hashes>
+		</dir>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary>Some nice ADDONS for Confused Build</summary>
+		<description>Download And Install Addons</description>
+		<disclaimer>The owner and submitters to this repository do not host or distribute any of the content displayed by these addons nor do they have any affiliation with the content providers.</disclaimer>
+		<platform>all</platform>
+		<assets>
+			<icon>resources/icon.png</icon>
+			<fanart>resources/fanart.png</fanart>
+		</assets>
+		<news>
+- fixed: Addons
+		</news>
+	</extension>
+</addon>

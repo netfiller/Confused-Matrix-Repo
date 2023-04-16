@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<addon id="script.module.extvapi" name="Extended Kodi VAPI" version="1.0.2" provider-name="netfiller">
+    <requires>
+        <import addon="script.module.requests"/>
+        <import addon="inputstream.ffmpegdirect" optional="true" /> 
+    </requires>
+    <extension point="xbmc.python.pluginsource" library="lib/main.py">
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <description lang="en">Extended Kodi SAPI</description>
+        <description lang="de">Extended Kodi SAPI</description>
+        <assets></assets>
+    </extension>
+</addon>

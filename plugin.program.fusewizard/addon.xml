@@ -1,0 +1,20 @@
+<addon id="plugin.program.fusewizard" name="Fuse-Wizard" version="1.2" provider-name="netfiller">
+    <requires>
+        <import addon="xbmc.python" version="3.0.0" />
+        <import addon="script.module.xbmcswift2" version="19.0.6" />
+    </requires>
+    <extension library="addon.py" point="xbmc.python.pluginsource">
+		<provides>executable</provides>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <platform>all</platform>
+        <license>GPL-2.0-only</license>
+        <assets>
+            <icon>resources/art/icon.png</icon>
+            <fanart>resources/art/fanart.jpg</fanart>
+        </assets>
+        <summary lang="de_DE">Wizard um Confused Builds zu installieren</summary>
+        <summary lang="en_GB">Wizard to install Confused Builds</summary>
+        <summary lang="en_US">Wizard to install Confused Builds</summary>
+    </extension>
+</addon>
