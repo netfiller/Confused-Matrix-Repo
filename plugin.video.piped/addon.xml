@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<addon id="plugin.video.piped"
+  version="1.0.1"
+  name="Piped Video Player"
+  provider-name="mattrcole">
+  <requires>
+    <import addon="xbmc.python" version="3.0.0" />
+    <import addon="script.module.requests" version="2.27.1" />
+    <import addon="script.module.ttml2ssa" version="0.3.8" />
+    <!-- <import addon="script.module.web-pdb" version="1.5.6" /> -->
+    <import addon="script.module.m3u8" version="0.5.4"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="resources/lib/main.py">
+    <provides>video</provides>
+  </extension>
+  <extension point="xbmc.python.module" library="resources/lib" />
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">Piped video player</summary>
+    <description lang="en_GB">Play yt videos using Piped backend!</description>
+    <disclaimer lang="en_GB">Go support Team Piped!</disclaimer>
+    <assets>
+      <icon>icon.png</icon>
+      <fanart>fanart.jpg</fanart>
+    </assets>
+    <news>Initial version, still using example fanart</news>
+  </extension>
+</addon>
