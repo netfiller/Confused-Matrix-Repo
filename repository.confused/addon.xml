@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<addon id="repository.confused" name="Confused Repo" version="1.0.2" provider-name="netfiller">
+<addon id="repository.confused" name="Confused Repo" version="1.0.3" provider-name="netfiller">
 	<requires>
 		<import addon="xbmc.addon" version="12.0.0"/>
 	</requires>
