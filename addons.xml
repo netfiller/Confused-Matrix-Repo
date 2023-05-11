@@ -21,7 +21,7 @@
     </extension>
 </addon>
 
-<addon id="plugin.video.ardundzdf" name="ARDundZDF" version="4.7.0+matrix" provider-name="rols1 (rols1@gmx.de)">
+<addon id="plugin.video.ardundzdf" name="ARDundZDF" version="4.7.1+matrix" provider-name="rols1 (rols1@gmx.de)">
 <requires>
 	<import addon="xbmc.python" version="3.0.0"/>
 	<import addon="script.module.kodi-six" />
@@ -109,7 +109,7 @@ Screenshots und Wicki siehe Repo Kodi-Addon-ARDundZDF auf Github.
 
 </addon>
 
-<addon id="plugin.video.joyn" name="Joyn" version="2.5.19+matrix.1" provider-name="knaerzche, Maven">
+<addon id="plugin.video.joyn" name="Joyn" version="2.5.20+matrix.1" provider-name="knaerzche, Maven">
 	<requires>
 		<import addon="inputstream.adaptive" version="2.5.0"/>
 		<import addon="script.module.inputstreamhelper" version="0.4.4"/>
@@ -575,7 +575,7 @@ provider-name="jurialmunkey">
     </extension>
 </addon>
 
-<addon id="plugin.video.wedotv" name="WeDoTV" version="0.1.1" provider-name="azzy9">
+<addon id="plugin.video.wedotv" name="WeDoTV" version="0.1.2" provider-name="azzy9">
 	<requires>
 		<import addon="script.module.requests"/>
 		<import addon="script.module.six"/>
@@ -589,11 +589,9 @@ provider-name="jurialmunkey">
 		<language>uk</language>
 		<platform>all</platform>
 		<license>GPL-3.0-only</license>
-		<news>v0.1.1 (2022-12-22)
-Add Search
-
-v0.1.0 (2022-12-20)
-Change to use API</news>
+		<news>v0.1.2 - Remove the limit for move that limited it to 500
+	- Clean code
+	- Add validation data was being returned before it was being looped</news>
 		<assets>
 			<icon>icon.png</icon>
 			<fanart>fanart.jpg</fanart>
@@ -632,7 +630,7 @@ Xship 2023.01.25 limited Version
     </extension>
 </addon>
 
-<addon id="plugin.video.xstream" name="xStream" version="4.0.5~nightly9" provider-name="xStream-Team">
+<addon id="plugin.video.xstream" name="xStream" version="4.0.5~nightly10" provider-name="xStream-Team">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0"/>
 		<import addon="script.module.requests"/>
@@ -772,15 +770,21 @@ Xship 2023.01.25 limited Version
     </extension>
 </addon>
 
-<addon id="repository.confused" name="Confused Repo Matrix" version="1.0.2" provider-name="netfiller">
+<addon id="repository.confused" name="Confused Repo" version="1.0.2" provider-name="netfiller">
 	<requires>
 		<import addon="xbmc.addon" version="12.0.0"/>
 	</requires>
-	<extension point="xbmc.addon.repository" name="Confused Repo Matrix">
-		<dir minversion="18.9.9">
-			<info compressed="false">http://kodistream.tk/repo/addons.xml</info>
-			<checksum>http://kodistream.tk/repo/addons.xml.md5</checksum>
-			<datadir zip="true">http://kodistream.tk/repo/</datadir>
+	<extension point="xbmc.addon.repository" name="Confused Repo">
+		<dir minversion="19.0.0" maxversion="19.9.0">
+			<info compressed="false">https://raw.githubusercontent.com/netfiller/Confused-Matrix-Repo/main/addons.xml</info>
+			<checksum>https://raw.githubusercontent.com/netfiller/Confused-Matrix-Repo/main/addons.xml.md5</checksum>
+			<datadir zip="true">https://raw.githubusercontent.com/netfiller/Confused-Matrix-Repo/main/</datadir>
+			<hashes>false</hashes>
+		</dir>
+		<dir minversion="20.0.0" maxversion="20.9.0">
+			<info compressed="false">https://raw.githubusercontent.com/netfiller/Confused-Matrix-Repo/main/addons.xml</info>
+			<checksum>https://raw.githubusercontent.com/netfiller/Confused-Matrix-Repo/main/addons.xml.md5</checksum>
+			<datadir zip="true">https://raw.githubusercontent.com/netfiller/Confused-Matrix-Repo/main/</datadir>
 			<hashes>false</hashes>
 		</dir>
 	</extension>
@@ -795,6 +799,7 @@ Xship 2023.01.25 limited Version
 		</assets>
 		<news>
 - fixed: Addons
+- change: location
 		</news>
 	</extension>
 </addon>
@@ -1696,7 +1701,7 @@ v.3.3.3
   </extension>
 </addon>
 
-<addon id="script.module.inputstreamhelper" name="InputStream Helper" version="0.5.10+matrix.1" provider-name="emilsvennesson, dagwieers, mediaminister, horstle">
+<addon id="script.module.inputstreamhelper" name="InputStream Helper" version="0.6.0+matrix.1" provider-name="emilsvennesson, dagwieers, mediaminister, horstle">
   <requires>
     <!--py3 compliant-->
     <import addon="xbmc.python" version="3.0.0"/>
@@ -1722,6 +1727,11 @@ v.3.3.3
     <description lang="hr_HR">Jednostavan Kodi modul koji olakšava razvijanje dodataka koji se temelje na InputStream dodatku i reprodukciji DRM zaštićenog sadržaja.</description>
     <description lang="ru_RU">Простой модуль для Kodi, который облегчает жизнь разработчикам дополнений, с использованием InputStream дополнений и воспроизведения DRM контента.</description>
     <news>
+v0.6.0 (2023-05-03)
+- Initial support for AARCH64 Linux (@horstle)
+- Initial support for AARCH64 Macs (@mediaminister)
+- New option to install a specific version on most platforms (@horstle)
+
 v0.5.10 (2022-04-18)
 - Fix automatic submission of release
 - Update German translation
@@ -2374,6 +2384,33 @@ AMF3, the default serialization for ActionScript 3.0, provides various advantage
     <assets>
       <icon>resources/icon.png</icon>
     </assets>
+  </extension>
+</addon>
+
+<addon id="script.module.web-pdb"
+       name="Web-PDB"
+       version="1.5.6+matrix.1"
+       provider-name="Roman V.M.">
+  <requires>
+    <import addon="xbmc.python" version="3.0.0"/>
+    <import addon="script.module.bottle" version="0.12.0"/>
+  </requires>
+  <extension point="xbmc.python.script" library="main.py">
+    <provides>executable</provides>
+  </extension>
+  <extension point="xbmc.python.module" library="libs" />
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en_GB">Web-based remote Python debugger</summary>
+    <description lang="en_GB">Provides a web-UI for Python's built-in PDB debugger for remote debugging Kodi addons.</description>
+    <platform>all</platform>
+    <license>MIT</license>
+    <forum>http://forum.kodi.tv/showthread.php?tid=292141</forum>
+    <source>https://github.com/romanvm/kodi.web-pdb</source>
+    <assets>
+      <icon>icon.png</icon>
+      <screenshot>resources/screenshot.jpg</screenshot>
+    </assets>
+    <news>- 1.5.6: Fixed not being able to assign a local variable via the debugger console.</news>
   </extension>
 </addon>
 
