@@ -1,4 +1,8 @@
 ﻿
+[B]Version 3.0.7+matrix.1  (26.05.2023)[/B]
+- fixed: Es können keine Sendungen zu den Addon-Favoriten hinzugefügt werden
+- added: Anpassungen an Änderungen von KODI-Nexus
+
 [B]Version 3.0.6+matrix.1  (20.07.2022)[/B]
 - fixed: Livestream in alter Form mittels m3u8 abspielen (Neue Url für DE+AT)
 

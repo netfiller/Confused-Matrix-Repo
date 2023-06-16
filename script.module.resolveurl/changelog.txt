@@ -1,22 +1,18 @@
-Version 5.1.97 (May 1, 2023)
+Version 5.1.100 (Jun 11, 2023)
 - Code Base Changes:
     - None
 
 - Resolvers Added:
-    - allviid
-    - upbaam
-    - vidspeed
+    - None
 
 - Resolvers Fixed/Updated:
-    - anonfiles
-    - doodstream
-    - filemoon
-    - goload
-    - peertube
+    - clicknupload
+    - desiupload
+    - filelions
+    - gofile
     - streamhide
-    - streamruby
-    - upvid
-    - voe
+    - streamsb
+
 
 - Resolvers Removed
     - None

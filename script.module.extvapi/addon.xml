@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-<addon id="script.module.extvapi" name="Extended Kodi VAPI" version="1.0.2" provider-name="netfiller">
+<addon id="script.module.extvapi" name="Extended Kodi VAPI" version="1.0.3" provider-name="netfiller">
     <requires>
         <import addon="script.module.requests"/>
         <import addon="inputstream.ffmpegdirect" optional="true" /> 
